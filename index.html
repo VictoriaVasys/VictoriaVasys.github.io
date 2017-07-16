@@ -36,20 +36,20 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <button type="button" class="navbar-toggle navbar-right" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Navigate <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#contact">
-                    <span><img id="v-logo" src="./img/v-logo-4.png" alt="V"/><span class="light">ictoria <img id="v-logo" src="./img/v-logo-4.png" alt="V"/><span class="light">asys</span></span>
+                    <span><img id="v-logo" src="./img/v-logo-4.png" alt="V"/><span class="light">ictoria</span>
                     <!-- <span class="v-highlight">V</span><span class="light">ictoria</span> -->
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -59,6 +59,9 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#education">Education</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -76,7 +79,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading"><img id="v-logo-big" src="./img/v-logo-4.png" alt="V"/>ictoria <img id="v-logo-big" src="./img/v-logo-4.png" alt="V"/>asys</h1>
+                        <h1 class="brand-heading"><span class="img-name-together"><img id="v-logo-big" src="./img/v-logo-4.png" alt="V"/>ictoria <span class="img-name-together-sm"><img id="v-logo-big" src="./img/v-logo-4.png" alt="V"/>asys</span></span></h1>
                         <p class="intro-text">Ideating | Empathetic | Adaptable | Resourceful | Dependable
                         <br> <span class="intro-text-2">Web Developer</span></p>
                         <a href="#about" class="btn btn-circle page-scroll">
@@ -89,14 +92,21 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="about" class="container summary-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Summary</h2>
-                <p>I'm currently attending classes at Turing School of Software and Design after spending years exploring the world via bike, boat, train, plane, and automobile, experiencing tremendous growth as a human and learning as much as possible about sustainable agriculture. I visited and WWOOFed on various farms and gardens, took garden and farm apprenticeships and jobs, and was an active part of the Permaculture community in my hometown. </p>
-                <p>Unfortunately, however, most sustainable agriculture jobs are highly seasonal, so I worked as an administrative assistant, cab driver, server, cook, and bartender to provide for myself and spent a lot of time contemplating and researching various career paths. </p>
-                <p>It quickly became clear that web development would not only allow me to apply my intelligence and creativity in a productive manner, but would allow me to apply a multitude of my varied interests to my career. I'm really enthused about the things I've learned so far and can't wait to see where the path ahead will lead me.</p>
-                
+                <p class="summary">I'm currently attending classes at Turing School of Software and Design after spending years exploring the world via bike, boat, train, plane, and automobile, experiencing tremendous growth as a human and learning as much as possible about sustainable agriculture. I visited and WWOOFed on various farms and gardens, took garden and farm apprenticeships and jobs, and was an active part of the Permaculture community in my hometown.</p>
+                <p class="summary">Unfortunately, however, most sustainable agriculture jobs are highly seasonal, so I worked as an administrative assistant, cab driver, server, cook, and bartender to provide for myself and spent a lot of time contemplating and researching various career paths.</p>
+                <p class="summary">It quickly became clear that web development would not only allow me to apply my intelligence and creativity in a productive manner, but would allow me to apply a multitude of my varied interests to my career. I'm really enthused about the things I've learned so far and can't wait to see where the path ahead will lead me.</p>
+                <br>
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                  <li class="skills"><b>Languages:</b> Ruby, JavaScript, SQL, HTML5, CSS3/Sass</li>
+                  <li class="skills"><b>Frameworks & Libraries:</b> Git, Heroku, Rails 4-5, Sinatra, jQuery, Bootstrap</li>
+                  <li class="skills"><b>TDD:</b> RSpec, MiniTest, Mocha/Chai, Selenium, Factory Girl, Capybara, VCR</li>
+                  <li class="skills"><b>Other:</b> OOP, RESTful JSON APIs, Agile methodologies, Technical writing</li>
+                </ul>
                 <!-- <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
                 <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
                 <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p> -->
@@ -107,8 +117,8 @@
     <!-- <i class="glyphicon glyphicon-ok"></i>  -->
     
     <!-- Download Section -->
-    <section id="projects" class="content-section text-center">
-        <div class="projects-section">
+    <section id="projects" class="summary-section text-center">
+        <div class="project-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Projects</h2>
@@ -227,12 +237,36 @@
             </div>
         </div>
     </section>
+    
+    <section id="education" class="summary-section text-center">
+      <div class="project-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Education</h2>
+            <h4>Turing School of Software and Design</h4>
+            <p><i>Denver, CO</i>January 2017 – August 2017</p>
+            <p>Turing students invest over 1500 hours across seven months in becoming job-ready software developers. In the Back-End Engineering program, we begin by building skills in object-oriented programming and design. We continue by building full-stack Rails applications, then move into providing and consuming APIs. In the final quarter, students layer on the fundamentals of JavaScript, build with React, and mix in other production techniques like message queues, continuous integration, and agile project management. In total, BEE graduates have the skills to turn HTML and CSS templates into production-ready applications.</p>
+            <p>Activities and Organizations: Berners-Lee Posse (student support & growth group) co-leader, BerylliumBE (student organization to practice coding challenges and gain a deeper understanding of the tech world) founder & co-leader, Turing Podcast producer & host, cross-mod pairing co-organizer, Joan Clarke Society (organization to support female developers) member</p>
+            
+            <h4>University of Wisconsin–Madison</h4>
+            <p><i>Madison, WI</i> August 2004 — May 2010 </p>
+            <p>Bachelor of Science (BS) - Atmospheric and Oceanic Sciences</p>
+            <p>Certificate (Minor) - Environmental Studies</p>
+            <p>Wrote and edited technical papers for studies on both the carbon cycle near Lake Superior and the effects of stratospheric moisture on sea surface temperatures.</p>
+            
+            <h4>University of Queensland</h4>
+            <p><i>Brisbane, Queensland, AUSTRALIA</i> January 2007 - June 2007</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="contact" class="container contact-section text-center">
         <div class="row contact-info">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact <img id="v-logo-med" src="./img/v-logo-4.png" alt="V"/>ictoria</h2>
+                <h2>Contact <span class="img-name-together-sm"><img id="v-logo-med" src="./img/v-logo-4.png" alt="V"/>ictoria</span></h2>
                 <p>Feel free to email, tweet, or message me to find out more :)</p>
                 <p><a href="mailto:victoria.vasys@gmail.com">victoria.vasys@gmail.com</a>
                 </p>

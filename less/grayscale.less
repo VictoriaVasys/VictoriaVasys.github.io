@@ -40,6 +40,8 @@ h4 {
 
 p {
     margin: 0 0 25px;
+    font-family: Helvetica;
+    font-weight: lighter;
     font-size: 18px;
     line-height: 1.5;
     @media(min-width:768px) {
@@ -47,6 +49,49 @@ p {
         font-size: 20px;
         line-height: 1.6;
     }
+}
+
+.contact-info h2, p:nth-child(3) {
+  margin-bottom: 10px;
+}
+
+.summary {
+    margin: 0 0 25px !important;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Helvetica;
+    font-weight: lighter;
+    @media(min-width:768px) {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+.skills {
+  margin: 0 0 8px !important;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: Helvetica;
+  font-weight: lighter;
+  @media(min-width:768px) {
+      margin: 0 0 35px;
+      font-size: 20px;
+      line-height: 1.6;
+  }
+}
+
+.skills-list {
+  margin: 0 0 25px !important;
+}
+
+ul.projects-list li {
+  font-family: Helvetica;
+  font-weight: lighter;
+}
+
+ul.skills-list li {
+  margin-bottom: 10px;
 }
 
 a {
@@ -77,6 +122,11 @@ img {
   width: 46px;
 }
 
+ul.skills-list {
+  text-align: left;
+  font-size: 20px;
+}
+
 ul.projects-list {
   text-align: left;
 }
@@ -91,7 +141,8 @@ ul.projects-list {
 }
 
 .light {
-    font-weight: 400;
+  font-weight: 400;
+  color: #ff7474;
 }
 
 .navbar-custom {
@@ -190,6 +241,7 @@ ul.projects-list {
             font-size: 24px;
         }
     }
+    
     @media(min-width:768px) {
         height: 100%;
         padding: 0;
@@ -199,6 +251,9 @@ ul.projects-list {
             .brand-heading {
                 font-size: 70px;
             }
+              .img-name-together {
+                white-space: nowrap;
+              }
             .intro-text {
                 font-size: 20px;
             }
@@ -207,6 +262,12 @@ ul.projects-list {
             }
         }
     }
+}
+
+@media(max-width:768px) {
+  .img-name-together-sm {
+    white-space: nowrap;
+  }
 }
 
 .btn-circle {
@@ -282,15 +343,21 @@ ul.projects-list {
     }
 }
 
-.content-section {
+.summary-section {
+    padding-top: 80px;
+    text-align: left;
+}
+
+.contact-section {
     padding-top: 80px;
 }
 
 .project-section {
+    text-align: left;
     width: 100%;
     padding: 50px 0;
     color: white;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    // background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: #232323;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -340,10 +407,6 @@ ul.projects-list {
         color: #232323;
         background-color: @primary;
     }
-}
-
-.contact-info h2, p:nth-child(3) {
-  margin-bottom: 10px;
 }
 
 ul.banner-social-buttons {

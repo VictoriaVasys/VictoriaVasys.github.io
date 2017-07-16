@@ -1,14 +1,14 @@
 /*!
  * Start Bootstrap - Grayscale v3.3.7+1 (http://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2016 Start Bootstrap
+ * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
   width: 100%;
   height: 100%;
-  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
-  background-color: black;
+  background-color: #232323;
 }
 html {
   width: 100%;
@@ -17,14 +17,22 @@ html {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   margin: 0 0 35px;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  color: #ff7474;
+}
+h3 {
+  margin-bottom: 10px;
+}
+h3.no-production {
+  margin-bottom: 4px;
+}
+h4 {
+  margin-bottom: 4px;
 }
 p {
   margin: 0 0 25px;
@@ -39,7 +47,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color: #ff7474;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -47,7 +55,29 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #ff4141;
+}
+img {
+  width: 100%;
+}
+#v-logo {
+  width: 30px;
+}
+#v-logo-big {
+  width: 85px;
+}
+#v-logo-med {
+  width: 46px;
+}
+ul.projects-list {
+  text-align: left;
+}
+.projects-links {
+  text-align: center;
+}
+.v-highlight {
+  font-size: 26px;
+  font-weight: bold;
 }
 .light {
   font-weight: 400;
@@ -57,7 +87,7 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: #232323;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -96,7 +126,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #ff7474;
 }
 .navbar-custom .nav li.active a:hover {
   color: white;
@@ -113,7 +143,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: black;
+    background: #232323;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
@@ -124,8 +154,8 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-  background-color: black;
+  background: url(../img/flower-bw.png) no-repeat bottom center scroll;
+  background-color: #232323;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -141,16 +171,26 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
+.intro .intro-body .intro-text-2 {
+  font-size: 24px;
+}
 @media (min-width: 768px) {
   .intro {
     height: 100%;
     padding: 0;
   }
+  .intro .intro-body {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
   .intro .intro-body .brand-heading {
-    font-size: 100px;
+    font-size: 70px;
   }
   .intro .intro-body .intro-text {
-    font-size: 26px;
+    font-size: 20px;
+  }
+  .intro .intro-body .intro-text-2 {
+    font-size: 30px;
   }
 }
 .btn-circle {
@@ -218,14 +258,14 @@ a:focus {
   }
 }
 .content-section {
-  padding-top: 100px;
+  padding-top: 80px;
 }
-.download-section {
+.project-section {
   width: 100%;
   padding: 50px 0;
   color: white;
   background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
+  background-color: #232323;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -258,16 +298,20 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid #ff7474;
+  color: #ff7474;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid #ff7474;
   outline: none;
-  color: black;
-  background-color: #42DCA3;
+  color: #232323;
+  background-color: #ff7474;
+}
+.contact-info h2,
+p:nth-child(3) {
+  margin-bottom: 10px;
 }
 ul.banner-social-buttons {
   margin-top: 0;
@@ -288,7 +332,7 @@ ul.banner-social-buttons {
   }
 }
 footer {
-  padding: 50px 0;
+  padding: 75px 0;
 }
 footer p {
   margin: 0;

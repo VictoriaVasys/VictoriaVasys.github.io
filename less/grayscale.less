@@ -107,7 +107,9 @@ a {
 }
 
 img {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 10px;
 }
 
 #v-logo {
@@ -241,7 +243,7 @@ ul.projects-list {
             font-size: 24px;
         }
     }
-    
+
     @media(min-width:768px) {
         height: 100%;
         padding: 0;
@@ -455,4 +457,68 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: fade(white, 20%);
+}
+
+.full-circle-image-left {
+  width: 48%;
+  margin: 0 3% 0 0;
+}
+
+.full-circle-image-right {
+  width: 48%;
+  margin: 0;
+}
+
+figcaption {
+  display: inline-block;
+}
+
+.caption-center {
+  width: 70%;
+  margin-left: 14%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.caption-left {
+  width:48%;
+  margin-right:3%;
+  padding: 10px 0;
+}
+
+.caption-right{
+  width:48%;
+  padding: 10px 0;
+}
+
+.xenia-left-img {
+  width:68%;
+  margin: 0 3% 0 0;
+}
+
+.xenia-right-img {
+  margin:0;
+  width:28%;
+}
+
+@media(max-width:768px) {
+  .full-circle-image-left, .full-circle-image-right, .caption-left, .caption-right, .xenia-left-img {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+  }
+
+  .caption-left {
+    margin-right:0;
+  }
+
+  .xenia-right-img {
+    width:60%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+  }
+}
+
+#v-logo, #v-logo-med, #v-logo-big {
+  margin:0;
 }

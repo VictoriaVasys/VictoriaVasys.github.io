@@ -359,13 +359,21 @@ figcaption {
   display: inline-block;
 }
 
+.caption {
+  width: 70%;
+  margin-left: 14%
+  padding: 10px 0;
+  text-align: center;
+}
 .caption-left {
   width:48%;
   margin-right:3%;
+  padding: 10px 0;
 }
 
 .caption-right{
   width:48%;
+  padding: 10px 0;
 }
 
 .xenia-left-img {

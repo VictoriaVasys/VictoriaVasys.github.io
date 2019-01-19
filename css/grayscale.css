@@ -426,6 +426,49 @@ body {
 figcaption {
   display: inline-block;
 }
+.side-by-side-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .side-by-side-images {
+    justify-content: center;
+  }
+}
+.image-and-caption {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image-and-caption img {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.image-and-caption figcaption {
+  width: 100%;
+  text-align: center;
+  padding: 0 10%;
+}
+@media (max-width: 768px) {
+  .image-and-caption {
+    width: 80%;
+  }
+  .image-and-caption figcaption {
+    margin-bottom: 10px;
+  }
+}
+#mineral-accessibility {
+  align-self: stretch;
+}
+@media (max-width: 768px) {
+  #mineral-accessibility {
+    margin-bottom: 4em;
+  }
+}
 .caption-center {
   width: 70%;
   margin-left: 14%;
@@ -436,10 +479,12 @@ figcaption {
   width: 48%;
   margin-right: 3%;
   padding: 10px 0;
+  text-align: center;
 }
 .caption-right {
   width: 48%;
   padding: 10px 0;
+  text-align: center;
 }
 .xenia-left-img {
   width: 68%;
@@ -464,7 +509,7 @@ figcaption {
   }
   .xenia-right-img {
     width: 60%;
-    margin-left: 15%;
+    margin-left: 20%;
     margin-bottom: 10px;
   }
 }

@@ -7,12 +7,13 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
+  color: #D0D0D0;
   background-color: #232323;
 }
 html {
   width: 100%;
   height: 100%;
+  background-color: #232323;
 }
 h1,
 h2,
@@ -92,14 +93,17 @@ ul.skills-list li {
 }
 a {
   color: #ff7474;
+  text-decoration: underline;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 a:hover,
 a:focus {
-  text-decoration: none;
   color: #ff4141;
+}
+.no-underline {
+  text-decoration: none;
 }
 img {
   width: 80%;
@@ -109,7 +113,7 @@ img {
 #v-logo {
   width: 30px;
 }
-#v-logo-big {
+.v-logo-big {
   width: 85px;
 }
 #v-logo-med {
@@ -119,10 +123,14 @@ ul.skills-list {
   text-align: left;
   font-size: 20px;
 }
+.project {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+}
 ul.projects-list {
   text-align: left;
 }
 .projects-links {
+  color: #ff7474;
   text-align: center;
 }
 .v-highlight {
@@ -141,7 +149,7 @@ ul.projects-list {
   background-color: #232323;
 }
 .navbar-custom .navbar-toggle {
-  color: white;
+  color: #D0D0D0;
   background-color: #ff7474;
   font-size: 12px;
 }
@@ -156,7 +164,7 @@ ul.projects-list {
   outline: none;
 }
 .navbar-custom a {
-  color: white;
+  color: #D0D0D0;
 }
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
@@ -180,7 +188,7 @@ ul.projects-list {
   background-color: #ff7474;
 }
 .navbar-custom .nav li.active a:hover {
-  color: white;
+  color: #D0D0D0;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -198,13 +206,16 @@ ul.projects-list {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
+.white {
+  color: white !important;
+}
 .intro {
   display: table;
   width: 100%;
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: white;
+  color: #D0D0D0;
   background: url(../img/flower-bw.png) no-repeat bottom center scroll;
   background-color: #232323;
   -webkit-background-size: cover;
@@ -260,7 +271,7 @@ ul.projects-list {
   border: 2px solid white;
   border-radius: 100% !important;
   font-size: 40px;
-  color: white;
+  color: #D0D0D0;
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -269,7 +280,7 @@ ul.projects-list {
 .btn-circle:hover,
 .btn-circle:focus {
   outline: none;
-  color: white;
+  color: #D0D0D0;
   background: rgba(255, 255, 255, 0.1);
 }
 .btn-circle i.animated {
@@ -327,7 +338,7 @@ ul.projects-list {
   text-align: left;
   width: 100%;
   padding: 50px 0;
-  color: white;
+  color: #D0D0D0;
   background-color: #232323;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -515,6 +526,6 @@ figcaption {
 }
 #v-logo,
 #v-logo-med,
-#v-logo-big {
+.v-logo-big {
   margin: 0;
 }

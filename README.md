@@ -1,4 +1,6 @@
 # Developing
+* Run `http-server` to start
+    * Run `gulp dev`? to start (not currently working)
 * Add styles to grayscale.less
 * Run `gulp minify-css` to apply or `gulp dev` for browser sync
 

@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Grayscale v3.3.7+1 (http://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -455,6 +455,7 @@ figcaption {
   justify-content: space-between;
 }
 .image-and-caption img {
+  border: 1px solid white;
   width: 100%;
   margin: 0;
   margin-bottom: 10px;

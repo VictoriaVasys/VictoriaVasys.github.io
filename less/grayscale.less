@@ -497,28 +497,44 @@ figcaption {
   }
 }
 
+.phone-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media(max-width:768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .image-and-caption {
-  width: 48%;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 48%;
   img {
     border: 1px solid white;
-    width: 100%;
     margin: 0;
     margin-bottom: 10px;
+    width: 100%;
+  }
+  &.phone-screenshot img {
+    border: none;
+    max-width: 300px;
+    width: 90%;
   }
   figcaption {
-    width: 100%;
-    text-align: center;
     padding: 0 10%;
+    text-align: center;
+    width: 100%;
   }
   @media(max-width:768px) {
     width: 80%;
-  figcaption {
-    margin-bottom: 10px;
+    figcaption {
+      margin-bottom: 10px;
+    }
   }
-}
 }
 
 #mineral-accessibility {
@@ -536,26 +552,26 @@ figcaption {
 }
 
 .caption-left {
-  width:48%;
-  margin-right:3%;
+  width: 48%;
+  margin-right: 3%;
   padding: 10px 0;
   text-align: center;
 }
 
 .caption-right{
-  width:48%;
+  width: 48%;
   padding: 10px 0;
   text-align: center;
 }
 
 .xenia-left-img {
-  width:68%;
+  width: 68%;
   margin: 0 3% 0 0;
 }
 
 .xenia-right-img {
-  margin:0;
-  width:28%;
+  margin: 0;
+  width: 28%;
 }
 
 @media(max-width:768px) {

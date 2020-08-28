@@ -32,7 +32,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a799ed4-fb53-49eb-a32f-eb875f881e56" name="Default Changelist" comment="" />
+    <list default="true" id="5a799ed4-fb53-49eb-a32f-eb875f881e56" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +110,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="684" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598328919134">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="684" y="493" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1097@0.23.1792.1097" timestamp="1598328919134" />
     <state x="597" y="326" width="598" height="490" key="find.popup" timestamp="1597883163325">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
